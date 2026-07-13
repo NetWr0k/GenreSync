@@ -1,0 +1,29 @@
+{
+  "name": "genresync",
+  "version": "1.0.0",
+  "description": "Automated Spotify playlist organizer that detects newly liked tracks and uses Gemini AI to classify and sort them into genre/mood playlists, learning your taste over time.",
+  "main": "dist/index.js",
+  "type": "commonjs",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/index.js run",
+    "dev": "ts-node src/index.ts run",
+    "auth": "ts-node src/index.ts auth",
+    "once": "ts-node src/index.ts once",
+    "profile:rebuild": "ts-node src/index.ts profile:rebuild",
+    "playlists:list": "ts-node src/index.ts playlists:list"
+  },
+  "keywords": ["spotify", "gemini", "ai", "playlist", "genre", "automation"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "node-fetch": "^2.7.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.10",
+    "@types/node-fetch": "^2.6.11",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.3"
+  }
+}
